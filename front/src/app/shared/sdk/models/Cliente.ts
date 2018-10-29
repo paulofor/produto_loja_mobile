@@ -1,7 +1,7 @@
 
 /* tslint:disable */
 import {
-  Cliente
+ 
 } from '../index';
 
 declare var Object: any;

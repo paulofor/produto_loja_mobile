@@ -1,7 +1,7 @@
 
 /* tslint:disable */
 import {
-  PedidoProduto
+ 
 } from '../index';
 
 declare var Object: any;
