@@ -1,7 +1,7 @@
 
 /* tslint:disable */
 import {
-  Comprador
+ 
 } from '../index';
 
 declare var Object: any;
