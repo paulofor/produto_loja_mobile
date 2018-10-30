@@ -7,14 +7,14 @@ import {
 declare var Object: any;
 export interface PedidoInterface {
   "id": number;
-  "dataCriacao": date;
+  "dataCriacao": Date;
   "ativo": string;
 
 }
 
 export class Pedido implements PedidoInterface {
   "id": number;
-  "dataCriacao": date;
+  "dataCriacao": Date;
   "ativo": string;
   constructor(data?: PedidoInterface) {
     Object.assign(this, data);
@@ -56,7 +56,7 @@ export class Pedido implements PedidoInterface {
         },
         "dataCriacao" : {
         	name : "dataCriacao",
-        	type : "date"
+        	type : "Date"
         },
         "ativo" : {
         	name : "ativo",
