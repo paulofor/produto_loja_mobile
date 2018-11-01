@@ -8,12 +8,16 @@ declare var Object: any;
 export interface ClienteInterface {
   "id": number;
   "nome": string;
+  "login": string;
+  "senha": string;
 
 }
 
 export class Cliente implements ClienteInterface {
   "id": number;
   "nome": string;
+  "login": string;
+  "senha": string;
   constructor(data?: ClienteInterface) {
     Object.assign(this, data);
   }
@@ -54,6 +58,14 @@ export class Cliente implements ClienteInterface {
         },
         "nome" : {
         	name : "nome",
+        	type : "string"
+        },
+        "login" : {
+        	name : "login",
+        	type : "string"
+        },
+        "senha" : {
+        	name : "senha",
         	type : "string"
         },
       },
