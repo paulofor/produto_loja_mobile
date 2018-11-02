@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { SocketConnection } from './shared/sdk/sockets/socket.connections';
 import { SocketDriver } from './shared/sdk/sockets/socket.driver';
-import { SDKModels, LoopBackAuth, InternalStorage } from './shared/sdk';
+import { SDKModels, LoopBackAuth, InternalStorage, ClienteApi, CompradorApi, PedidoProdutoApi, ProdutoApi, PedidoApi } from './shared/sdk';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -42,7 +42,12 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
     SocketDriver,
     SDKModels,
     LoopBackAuth,
-    InternalStorage
+    InternalStorage,
+    ClienteApi,
+    CompradorApi,
+    PedidoApi,
+    PedidoProdutoApi,
+    ProdutoApi
   ],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent]

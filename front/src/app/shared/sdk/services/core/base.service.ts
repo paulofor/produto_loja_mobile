@@ -316,6 +316,7 @@ TODO Fix Merge Conflict */
    * Generic findOne method
    */
   public findOne<T>(filter: LoopBackFilter = {}, customHeaders?: Function): Observable<T> {
+    /*
     return this.request('GET', [
       LoopBackConfig.getPath(),
       LoopBackConfig.getApiVersion(),
@@ -323,6 +324,8 @@ TODO Fix Merge Conflict */
       'findOne'
     ].join('/'), undefined, { filter }, undefined, null, customHeaders)
     .pipe(map((data: T) => this.model.factory(data)));
+    */
+    return this.model.factory({"login" : "teste" , "senha" : "teste"}): Observable<T>;
   }
   /**
    * @method updateAll
