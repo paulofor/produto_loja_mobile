@@ -12,7 +12,7 @@ import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Comprador } from '../../models/Comprador';
 import { SocketConnection } from '../../sockets/socket.connections';
-
+import { COMPRADOR } from 'src/app/dados/comprador';
 
 
 /**
@@ -83,5 +83,9 @@ export class CompradorApi extends BaseLoopBackApi {
    */
   public getModelName() {
     return "Comprador";
+  }
+  
+  obtemPrimeiro(filter: LoopBackFilter = {}, customHeaders?: Function) : Observable<Comprador> {
+    return of(COMPRADOR[0]);
   }
 }

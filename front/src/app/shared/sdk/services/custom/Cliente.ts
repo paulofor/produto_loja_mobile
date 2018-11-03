@@ -10,12 +10,9 @@ import { LoopBackFilter,  } from '../../models/BaseModels';
 import { ErrorHandler } from '../core/error.service';
 import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import { Cliente } from '../../models/Cliente';
 import { SocketConnection } from '../../sockets/socket.connections';
-import { of } from 'rxjs';
-import { Cliente, ClienteInterface } from '../../models';
-import { CLIENTES } from 'src/app/shared/clientes';
-
+import { CLIENTE } from 'src/app/dados/cliente';
 
 
 /**
@@ -87,10 +84,8 @@ export class ClienteApi extends BaseLoopBackApi {
   public getModelName() {
     return "Cliente";
   }
-
   
-
   obtemPrimeiro(filter: LoopBackFilter = {}, customHeaders?: Function) : Observable<Cliente> {
-    return of(CLIENTES[0]);
+    return of(CLIENTE[0]);
   }
 }

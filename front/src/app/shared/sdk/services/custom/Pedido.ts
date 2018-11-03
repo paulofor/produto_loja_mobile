@@ -12,7 +12,7 @@ import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Pedido } from '../../models/Pedido';
 import { SocketConnection } from '../../sockets/socket.connections';
-
+import { PEDIDO } from 'src/app/dados/pedido';
 
 
 /**
@@ -83,5 +83,9 @@ export class PedidoApi extends BaseLoopBackApi {
    */
   public getModelName() {
     return "Pedido";
+  }
+  
+  obtemPrimeiro(filter: LoopBackFilter = {}, customHeaders?: Function) : Observable<Pedido> {
+    return of(PEDIDO[0]);
   }
 }
