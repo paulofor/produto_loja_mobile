@@ -7,9 +7,10 @@ import { LoopBackAuth } from './auth.service';
 import { LoopBackConfig } from '../../lb.config';
 import { LoopBackFilter, AccessToken } from '../../models/BaseModels';
 import { SDKModels } from '../custom/SDKModels';
-import { Observable, Subject } from 'rxjs';
+import { Observable, Subject, of } from 'rxjs';
 import { catchError, map, filter } from 'rxjs/operators';
 import { SocketConnection } from '../../sockets/socket.connections';
+import { Cliente } from '../../models';
 // Making Sure EventSource Type is available to avoid compilation issues.
 declare var EventSource: any;
 class CustomQueryEncoderHelper implements HttpParameterCodec {
@@ -316,7 +317,6 @@ TODO Fix Merge Conflict */
    * Generic findOne method
    */
   public findOne<T>(filter: LoopBackFilter = {}, customHeaders?: Function): Observable<T> {
-    /*
     return this.request('GET', [
       LoopBackConfig.getPath(),
       LoopBackConfig.getApiVersion(),
@@ -324,9 +324,8 @@ TODO Fix Merge Conflict */
       'findOne'
     ].join('/'), undefined, { filter }, undefined, null, customHeaders)
     .pipe(map((data: T) => this.model.factory(data)));
-    */
-    return this.model.factory({"login" : "teste" , "senha" : "teste"}): Observable<T>;
   }
+
   /**
    * @method updateAll
    * @author Jonathan Casarrubias <t: johncasarrubias, gh: mean-expert-official>
