@@ -1,6 +1,6 @@
-import { Cliente } from "./sdk/models";
+import { Cliente } from "../shared/sdk/models";
 
-export const  CLIENTES : Cliente[] = [
+export const  CLIENTE : Cliente[] = [
     {
         'id' : 1,
         'nome' : 'paulo',
