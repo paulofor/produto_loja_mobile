@@ -13,7 +13,7 @@ import { map } from 'rxjs/operators';
 import { Comprador } from '../../models/Comprador';
 import { SocketConnection } from '../../sockets/socket.connections';
 import { COMPRADOR } from 'src/app/dados/comprador';
-
+import { of } from 'rxjs';
 
 /**
  * Api services for the `Aplicacao` model.

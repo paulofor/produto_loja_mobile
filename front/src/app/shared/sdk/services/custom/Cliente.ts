@@ -13,7 +13,7 @@ import { map } from 'rxjs/operators';
 import { Cliente } from '../../models/Cliente';
 import { SocketConnection } from '../../sockets/socket.connections';
 import { CLIENTE } from 'src/app/dados/cliente';
-
+import { of } from 'rxjs';
 
 /**
  * Api services for the `Aplicacao` model.

@@ -13,7 +13,7 @@ import { map } from 'rxjs/operators';
 import { PedidoProduto } from '../../models/PedidoProduto';
 import { SocketConnection } from '../../sockets/socket.connections';
 import { PEDIDOPRODUTO } from 'src/app/dados/pedidoProduto';
-
+import { of } from 'rxjs';
 
 /**
  * Api services for the `Aplicacao` model.
