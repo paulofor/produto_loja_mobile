@@ -1,8 +1,3 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-#banner{
-    background: url('assets/img/inicial.jpg') no-repeat fixed;
-    background-size: cover;
-    min-height: 650px;
-    position: relative;
-    }
+
