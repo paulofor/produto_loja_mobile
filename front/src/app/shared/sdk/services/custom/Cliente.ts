@@ -12,9 +12,8 @@ import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Cliente } from '../../models/Cliente';
 import { SocketConnection } from '../../sockets/socket.connections';
-
-import { of } from 'rxjs';
 import { CLIENTE } from 'src/app/dados/cliente';
+import { of } from 'rxjs';
 
 /**
  * Api services for the `Aplicacao` model.
