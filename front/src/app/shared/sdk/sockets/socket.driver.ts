@@ -1,6 +1,6 @@
 /* tslint:disable */
 /**
- * @module SocketDriver
+ *??@module SocketDriver
  * @author Jonathan Casarrubias <t: johncasarrubias, gh: mean-expert-official>
  * @license MIT
  * @description
