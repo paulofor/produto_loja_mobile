@@ -21,7 +21,7 @@
 **/
 export class LoopBackConfig {
   private static path: string = '//validacao.kinghost.net:21101';
-  private static version: string | number = 'api';
+  private static version: string | number = 'api';
   private static authPrefix: string = '';
   private static debug: boolean = true;
   private static filterOn: string = 'headers';

@@ -222,7 +222,7 @@ export class UserApi extends BaseLoopBackApi {
    *
    * Data properties:
    *
-   *  - `count` ??? `{number}` - 
+   *  - `count` �?? `{number}` - 
    */
   public countAccessTokens(id: any, where: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "GET";
@@ -243,7 +243,7 @@ export class UserApi extends BaseLoopBackApi {
    *
    * @param {object} data Request data.
    *
-   *  - `data` ??? `{object}` - Model instance data
+   *  - `data` �?? `{object}` - Model instance data
    *
    * @returns {object} An empty reference that will be
    *   populated with the actual data once the response is returned
@@ -274,7 +274,7 @@ export class UserApi extends BaseLoopBackApi {
    *
    * @param {object} data Request data.
    *
-   *  - `data` ??? `{object}` - An object of model property name/value pairs
+   *  - `data` �?? `{object}` - An object of model property name/value pairs
    *
    * @returns {object} An empty reference that will be
    *   populated with the actual data once the response is returned
@@ -318,10 +318,10 @@ export class UserApi extends BaseLoopBackApi {
    *   populated with the actual data once the response is returned
    *   from the server.
    *
-   * O corpo de resposta cont??m propriedades do AccessToken criado no login.
-   * Dependendo do valor do par??metro `include`, o corpo poder?? conter propriedades adicionais:
+   * O corpo de resposta contém propriedades do AccessToken criado no login.
+   * Dependendo do valor do parâmetro `include`, o corpo poderá conter propriedades adicionais:
    * 
-   *   - `user` - `U+007BUserU+007D` - Dados do usu??rio com login efetuado atualmente. (`include=user`)
+   *   - `user` - `U+007BUserU+007D` - Dados do usuário com login efetuado atualmente. (`include=user`)
    * 
    *
    */
@@ -464,9 +464,9 @@ export class UserApi extends BaseLoopBackApi {
    *
    * @param {object} data Request data.
    *
-   *  - `oldPassword` ??? `{string}` - 
+   *  - `oldPassword` �?? `{string}` - 
    *
-   *  - `newPassword` ??? `{string}` - 
+   *  - `newPassword` �?? `{string}` - 
    *
    * @returns {object} An empty reference that will be
    *   populated with the actual data once the response is returned
@@ -495,7 +495,7 @@ export class UserApi extends BaseLoopBackApi {
    *
    * @param {object} data Request data.
    *
-   *  - `newPassword` ??? `{string}` - 
+   *  - `newPassword` �?? `{string}` - 
    *
    * @returns {object} An empty reference that will be
    *   populated with the actual data once the response is returned

@@ -1,6 +1,6 @@
 /* tslint:disable */
 /**
- *??@module Storage
+ * @module Storage
  * @author Jonathan Casarrubias <t: johncasarrubias, gh: mean-expert-official>
  * @license MIT
  * @description
@@ -35,7 +35,7 @@ export class BaseStorage {
   remove(key: string): void {}
 }
 /**
- *??@module InternalStorage
+ * @module InternalStorage
  * @author Jonathan Casarrubias <t: johncasarrubias, gh: mean-expert-official>
  * @license MIT
  * @description
@@ -46,7 +46,7 @@ export class BaseStorage {
  **/
 export class InternalStorage extends BaseStorage {}
 /**
- *??@module SDKStorage
+ * @module SDKStorage
  * @author Jonathan Casarrubias <t: johncasarrubias, gh: mean-expert-official>
  * @license MIT
  * @description
