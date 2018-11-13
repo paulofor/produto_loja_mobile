@@ -1,7 +1,7 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { Cliente, ClienteApi } from '../shared/sdk';
+import { Component, OnInit } from '@angular/core';
+import { ClienteApi, Cliente } from '../shared/sdk';
 import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -11,45 +11,44 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  cliente: Cliente;
+  
+  isLoginError : boolean = false;
+  cliente : Cliente;
+
+  constructor( private clienteSrv: ClienteApi, private router: Router) { }
 
   ngOnInit() {
     this.cliente = new Cliente();
   }
 
 
-  constructor(
-    private clienteSrv: ClienteApi, private router: Router) {
-
-  }
-
   onSubmit() {
     console.log("User: ", this.cliente);
     this.verificaLogin();
   }
 
+
   verificaLogin() {
-    //this.clienteSrv.findOne({ "where": { "login": this.cliente.login } })
     this.clienteSrv.obtemPrimeiro({ "where": { "login": this.cliente.login } })
       .subscribe((item: Cliente) => {
         console.log('Cliente: ', item);
-
         if (item.senha === this.cliente.senha) {
-          this.loginOk();
-          //this.dialogRef.close();
-          this.router.navigate(['/principal']);
+          this.router.navigate(['/home']);
         } else {
-          this.loginErro();
         }
-
       })
   }
 
-  loginOk() {
-    console.log('Login ok');
+  /*
+  OnSubmit(userName,password){
+     this.userService.userAuthentication(userName,password).subscribe((data : any)=>{
+      localStorage.setItem('userToken',data.access_token);
+      this.router.navigate(['/home']);
+    },
+    (err : HttpErrorResponse)=>{
+      this.isLoginError = true;
+    });
   }
-  loginErro() {
-    console.log('Login com erro');
+  */
 
-  }
 }
