@@ -9,7 +9,7 @@ export interface ProdutoInterface {
   "id": number;
   "nome": string;
   "urlImagem": string;
-  "pre?o": number;
+  "pre�o": number;
   "idGp": number;
 
 }
@@ -18,7 +18,7 @@ export class Produto implements ProdutoInterface {
   "id": number;
   "nome": string;
   "urlImagem": string;
-  "pre?o": number;
+  "pre�o": number;
   "idGp": number;
   constructor(data?: ProdutoInterface) {
     Object.assign(this, data);
@@ -66,8 +66,8 @@ export class Produto implements ProdutoInterface {
         	name : "urlImagem",
         	type : "string"
         },
-        "pre?o" : {
-        	name : "pre?o",
+        "pre�o" : {
+        	name : "pre�o",
         	type : "number"
         },
         "idGp" : {
