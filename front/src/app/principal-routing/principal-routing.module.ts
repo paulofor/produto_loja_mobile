@@ -7,6 +7,8 @@ import { LoginComponent } from '../login/login.component';
 import { AdmHomeComponent } from '../adm-home/adm-home.component';
 import { FormsModule }   from '@angular/forms';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { ProdutosTelaComponent } from '../tela/produtos/produtos.component';
+import { PedidoTelaComponent } from '../tela/pedido/pedido.component';
 
 
 const principalRotas: Routes = [
@@ -14,7 +16,9 @@ const principalRotas: Routes = [
   { 
     path : 'home' , component: PrincipalComponent, 
     children : [
-      {path:'', component: AdmHomeComponent}
+      	{path:'', component: AdmHomeComponent},
+		{path:'produtos' , component: ProdutosTelaComponent },
+		{path:'pedido' , component: PedidoTelaComponent },
     ]
   }
 ]
