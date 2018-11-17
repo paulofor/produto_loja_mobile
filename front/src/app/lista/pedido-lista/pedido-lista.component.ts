@@ -4,11 +4,11 @@ import { Pedido, PedidoApi } from '../../shared/sdk';
 
 
 @Component({
-  selector: 'app-lista-pedido',
-  templateUrl: './lista-pedido.component.html',
-  styleUrls: ['./lista-pedido.component.scss']
+  selector: 'app-pedido-lista',
+  templateUrl: './pedido-lista.component.html',
+  styleUrls: ['./pedido-lista.component.scss']
 })
-export class ListaPedidoComponent implements OnInit {
+export class PedidoListaComponent implements OnInit {
 
 
   itens: Pedido[];
