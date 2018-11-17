@@ -2,9 +2,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tela-produtos',
-  templateUrl: './tela-produtos.component.html',
-  styleUrls: ['./tela-produtos.component.scss']
+  selector: 'app-produtos-tela',
+  templateUrl: './produtos-tela.component.html',
+  styleUrls: ['./produtos-tela.component.scss']
 })
 export class ProdutosTelaComponent implements OnInit {
 
