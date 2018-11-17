@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Comprador, CompradorApi } from '../shared/sdk';
+import { Comprador, CompradorApi } from '../../shared/sdk';
 
 
 @Component({

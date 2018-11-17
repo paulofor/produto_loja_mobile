@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Pedido, PedidoApi } from '../shared/sdk';
+import { Pedido, PedidoApi } from '../../shared/sdk';
 
 
 @Component({

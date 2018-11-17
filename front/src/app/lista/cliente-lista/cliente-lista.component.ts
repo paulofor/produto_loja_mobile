@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Cliente, ClienteApi } from '../shared/sdk';
+import { Cliente, ClienteApi } from '../../shared/sdk';
 
 
 @Component({
