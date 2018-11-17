@@ -37,7 +37,9 @@ const principalRotas: Routes = [
     LoginComponent,
     PrincipalComponent,
     AdmHomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    ProdutosTelaComponent,
+    PedidoTelaComponent
   ]
 })
 export class PrincipalRoutingModule { }
