@@ -6,13 +6,15 @@ import { SDKBrowserModule } from './shared/sdk';
 import { SocketDriver } from './shared/sdk/sockets/socket.driver';
 import { PrincipalRoutingModule } from './principal-routing/principal-routing.module';
 import { PedidoNovoComponent } from './lista/pedido-novo/pedido-novo.component';
+import { TesteSimplesComponent } from './teste-simples/teste-simples.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PedidoNovoComponent
+    PedidoNovoComponent,
+    TesteSimplesComponent
   ],
   imports: [
     BrowserModule,
