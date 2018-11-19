@@ -98,7 +98,7 @@ export class ContainerApi extends BaseLoopBackApi {
    *
    * Data properties:
    *
-   *  - `` – `{}` - 
+   *  - `` �?? `{}` - 
    */
   public destroyContainer(container: any, customHeaders?: Function): Observable<any> {
     let _method: string = "DELETE";
@@ -218,7 +218,7 @@ export class ContainerApi extends BaseLoopBackApi {
    *
    * Data properties:
    *
-   *  - `` – `{}` - 
+   *  - `` �?? `{}` - 
    */
   public removeFile(container: any, file: any, customHeaders?: Function): Observable<any> {
     let _method: string = "DELETE";
@@ -243,9 +243,9 @@ export class ContainerApi extends BaseLoopBackApi {
    *
    * @param {object} data Request data.
    *
-   *  - `req` – `{object}` - 
+   *  - `req` �?? `{object}` - 
    *
-   *  - `res` – `{object}` - 
+   *  - `res` �?? `{object}` - 
    *
    * @returns {object} An empty reference that will be
    *   populated with the actual data once the response is returned
@@ -253,7 +253,7 @@ export class ContainerApi extends BaseLoopBackApi {
    *
    * Data properties:
    *
-   *  - `result` – `{object}` - 
+   *  - `result` �?? `{object}` - 
    */
   public upload(container: any, req: any = {}, res: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
