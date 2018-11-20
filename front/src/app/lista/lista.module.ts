@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PedidoNovoComponent } from './pedido-novo/pedido-novo.component';
-
+import { ListaPedidoComponent } from './pedido-lista/pedido-lista.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-   
-  PedidoNovoComponent]
+    ListaPedidoComponent
+  ],
+  exports: [
+    ListaPedidoComponent
+  ]
 })
 export class ListaModule { }

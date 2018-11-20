@@ -4,11 +4,11 @@ import { Cliente, ClienteApi } from '../../shared/sdk';
 
 
 @Component({
-  selector: 'app-lista-cliente',
-  templateUrl: './lista-cliente.component.html',
-  styleUrls: ['./lista-cliente.component.scss']
+  selector: 'app-cliente-lista',
+  templateUrl: './cliente-lista.component.html',
+  styleUrls: ['./cliente-lista.component.scss']
 })
-export class ListaClienteComponent implements OnInit {
+export class ClienteListaComponent implements OnInit {
 
 
   itens: Cliente[];

@@ -4,11 +4,11 @@ import { Produto, ProdutoApi } from '../../shared/sdk';
 
 
 @Component({
-  selector: 'app-lista-produto',
-  templateUrl: './lista-produto.component.html',
-  styleUrls: ['./lista-produto.component.scss']
+  selector: 'app-produto-lista',
+  templateUrl: './produto-lista.component.html',
+  styleUrls: ['./produto-lista.component.scss']
 })
-export class ListaProdutoComponent implements OnInit {
+export class ProdutoListaComponent implements OnInit {
 
 
   itens: Produto[];

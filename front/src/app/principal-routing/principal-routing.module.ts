@@ -25,21 +25,23 @@ const principalRotas: Routes = [
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(principalRotas),
-    FormsModule
-  ],
-  exports: [
-    RouterModule
-  ],
-  declarations: [
-    LoginComponent,
-    PrincipalComponent,
-    AdmHomeComponent,
-    SidebarComponent,
-	ProdutosTelaComponent,
-	PedidoTelaComponent,
-  ]
+	imports: [
+		CommonModule,
+		RouterModule.forRoot(principalRotas),
+		FormsModule
+	],
+	exports: [
+		RouterModule,
+		ProdutosTelaComponent,
+		PedidoTelaComponent,
+	],
+	declarations: [
+		LoginComponent,
+		PrincipalComponent,
+		AdmHomeComponent,
+		SidebarComponent,
+		ProdutosTelaComponent,
+		PedidoTelaComponent,
+	]
 })
 export class PrincipalRoutingModule { }

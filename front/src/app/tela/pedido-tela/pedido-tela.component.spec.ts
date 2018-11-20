@@ -1,10 +1,10 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PedidoTelaComponent } from './tela-pedido.component';
+import { PedidoTelaComponent } from './pedido-tela.component';
 
 describe('PedidoTelaComponent', () => {
-  let component: ListaProjetoValorComponent;
+  let component: PedidoTelaComponent;
   let fixture: ComponentFixture<PedidoTelaComponent>;
 
   beforeEach(async(() => {

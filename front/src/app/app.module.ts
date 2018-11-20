@@ -5,22 +5,17 @@ import { AppComponent } from './app.component';
 import { SDKBrowserModule } from './shared/sdk';
 import { SocketDriver } from './shared/sdk/sockets/socket.driver';
 import { PrincipalRoutingModule } from './principal-routing/principal-routing.module';
-import { PedidoNovoComponent } from './lista/pedido-novo/pedido-novo.component';
-import { TesteSimplesComponent } from './teste-simples/teste-simples.component';
-
-
+import { ListaModule } from './lista/lista.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PedidoNovoComponent,
-    TesteSimplesComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     PrincipalRoutingModule,
-    SDKBrowserModule.forRoot()
-    
+    SDKBrowserModule.forRoot(),
+    ListaModule
   ],
   providers: [
     SocketDriver

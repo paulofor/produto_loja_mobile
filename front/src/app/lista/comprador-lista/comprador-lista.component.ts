@@ -4,11 +4,11 @@ import { Comprador, CompradorApi } from '../../shared/sdk';
 
 
 @Component({
-  selector: 'app-lista-comprador',
-  templateUrl: './lista-comprador.component.html',
-  styleUrls: ['./lista-comprador.component.scss']
+  selector: 'app-comprador-lista',
+  templateUrl: './comprador-lista.component.html',
+  styleUrls: ['./comprador-lista.component.scss']
 })
-export class ListaCompradorComponent implements OnInit {
+export class CompradorListaComponent implements OnInit {
 
 
   itens: Comprador[];

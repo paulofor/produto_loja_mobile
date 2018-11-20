@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "loja-mobile-app": {
+    "front3": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/loja-mobile-app",
+            "outputPath": "dist/front3",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "loja-mobile-app:build"
+            "browserTarget": "front3:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "loja-mobile-app:build:production"
+              "browserTarget": "front3:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "loja-mobile-app:build"
+            "browserTarget": "front3:build"
           }
         },
         "test": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "loja-mobile-app-e2e": {
+    "front3-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -104,11 +104,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "loja-mobile-app:serve"
+            "devServerTarget": "front3:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "loja-mobile-app:serve:production"
+              "devServerTarget": "front3:serve:production"
             }
           }
         },
@@ -124,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "loja-mobile-app"
+  "defaultProject": "front3"
 }
