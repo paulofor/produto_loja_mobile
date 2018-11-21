@@ -7,8 +7,8 @@ import { LoginComponent } from '../login/login.component';
 import { AdmHomeComponent } from '../adm-home/adm-home.component';
 import { FormsModule }   from '@angular/forms';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import { ProdutosTelaComponent } from '../tela/produtos-tela/produtos-tela.component';
-import { PedidoTelaComponent } from '../tela/pedido-tela/pedido-tela.component';
+import { ProdutosTelaComponentTelaComponent } from '../tela/produtos-tela-tela/produtos-tela-tela.component';
+import { PedidoTelaComponentTelaComponent } from '../tela/pedido-tela-tela/pedido-tela-tela.component';
 
 
 const principalRotas: Routes = [
@@ -17,8 +17,8 @@ const principalRotas: Routes = [
     path : 'home' , component: PrincipalComponent, 
     children : [
       	{path:'', component: AdmHomeComponent},
-		{path:'produtos' , component: ProdutosTelaComponent },
-		{path:'pedido' , component: PedidoTelaComponent },
+		{path:'produtos' , component: ProdutosTelaComponentTelaComponent },
+		{path:'pedido' , component: PedidoTelaComponentTelaComponent },
     ]
   }
 ]
@@ -32,16 +32,16 @@ const principalRotas: Routes = [
 	],
 	exports: [
 		RouterModule,
-		ProdutosTelaComponent,
-		PedidoTelaComponent,
+		ProdutosTelaComponentTelaComponent,
+		PedidoTelaComponentTelaComponent,
 	],
 	declarations: [
 		LoginComponent,
 		PrincipalComponent,
 		AdmHomeComponent,
 		SidebarComponent,
-		ProdutosTelaComponent,
-		PedidoTelaComponent,
+		ProdutosTelaComponentTelaComponent,
+		PedidoTelaComponentTelaComponent,
 	]
 })
 export class PrincipalRoutingModule { }

@@ -1,7 +1,7 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProdutosTelaComponent } from './produtos-tela.component';
+import { ProdutosTelaComponent } from './produtos-tela';
 
 describe('ProdutosTelaComponent', () => {
   let component: ProdutosTelaComponent;

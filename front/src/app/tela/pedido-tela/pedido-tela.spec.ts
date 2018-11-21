@@ -1,7 +1,7 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PedidoTelaComponent } from './pedido-tela.component';
+import { PedidoTelaComponent } from './pedido-tela';
 
 describe('PedidoTelaComponent', () => {
   let component: PedidoTelaComponent;
