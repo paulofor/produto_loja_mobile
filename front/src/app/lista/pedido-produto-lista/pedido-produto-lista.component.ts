@@ -4,9 +4,9 @@ import { PedidoProduto, PedidoProdutoApi } from '../../shared/sdk';
 
 
 @Component({
-  selector: 'app-pedidoproduto-lista',
-  templateUrl: './pedidoproduto-lista.component.html',
-  styleUrls: ['./pedidoproduto-lista.component.scss']
+  selector: 'app-pedido-produto-lista',
+  templateUrl: './pedido-produto-lista.component.html',
+  styleUrls: ['./pedido-produto-lista.component.scss']
 })
 export class PedidoProdutoListaComponent implements OnInit {
 
