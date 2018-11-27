@@ -7,8 +7,8 @@ import { LoginComponent } from '../login/login.component';
 import { AdmHomeComponent } from '../adm-home/adm-home.component';
 import { FormsModule }   from '@angular/forms';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import { ProdutosTelaComponent } from '../tela/produtos-tela/produtos-tela';
-import { PedidoTelaComponent } from '../tela/pedido-tela/pedido-tela';
+import { ProdutosTelaComponent } from '../tela/produtos-tela.component/produtos-tela.component';
+import { PedidoTelaComponent } from '../tela/pedido-tela.component/pedido-tela.component';
 
 
 const principalRotas: Routes = [
