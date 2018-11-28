@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ComponenteTelaModule } from 'src/app/tela/componente-tela.module';
+import { ComponenteListaModule } from './lista/componente-lista.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ComponenteTelaModule } from 'src/app/tela/componente-tela.module';
   ],
   imports: [
     BrowserModule,
-    ComponenteTelaModule
+    ComponenteTelaModule,
+    ComponenteListaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
