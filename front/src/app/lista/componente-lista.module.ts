@@ -6,7 +6,6 @@ import { PedidoListaComponent } from './pedido-lista/pedido-lista.component';
 import { CompradorListaComponent } from './comprador-lista/comprador-lista.component';  
 import { PedidoProdutoListaComponent } from './pedido-produto-lista/pedido-produto-lista.component';  
 import { ClienteListaComponent } from './cliente-lista/cliente-lista.component';
-import { TesteComponent } from './teste/teste.component';
 
 
 @NgModule({
@@ -18,14 +17,14 @@ import { TesteComponent } from './teste/teste.component';
     PedidoListaComponent,  
     CompradorListaComponent,  
     PedidoProdutoListaComponent,  
-    ClienteListaComponent, TesteComponent,
+    ClienteListaComponent,
   ],
   exports: [  
     ProdutoListaComponent,  
     PedidoListaComponent,  
     CompradorListaComponent,  
     PedidoProdutoListaComponent,  
-    ClienteListaComponent, TesteComponent
+    ClienteListaComponent,
   ]
 })
 export class ComponenteListaModule { }
