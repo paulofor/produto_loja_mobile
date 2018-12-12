@@ -19,10 +19,11 @@ export class PedidoListaComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.srv.find()
-      .subscribe((result: Pedido[]) =>
-        this.itens = result
-      );
+    this.srv.findFake()
+      .subscribe((result: Pedido[]) => {
+        console.log('Lista: ' , JSON.stringify(result));
+        this.itens = result;
+      });
   }
 
 

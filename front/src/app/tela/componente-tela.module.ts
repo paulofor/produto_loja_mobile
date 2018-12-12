@@ -2,12 +2,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';  
 import { ProdutosTelaComponent } from './produtos-tela/produtos-tela.component';  
-import { PedidoTelaComponent } from './pedido-tela/pedido-tela.component';
+import { PedidoTelaComponent } from './pedido-tela/pedido-tela.component';  
+import { ComponenteListaModule } from '../lista/componente-lista.module';
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,  
+    ComponenteListaModule,
   ],
   declarations: [  
     ProdutosTelaComponent,  
